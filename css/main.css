@@ -18,6 +18,12 @@ body {
 	margin: 0 auto;
 }
 
+#city { 
+	display: none;
+	margin: 0 auto;
+	max-width: 200px; 
+}
+
 #icon1 {
 	margin: 0 auto;
 }
