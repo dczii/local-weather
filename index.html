@@ -1,1 +1,37 @@
-<p>Hello world!</p>
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Local Weather app</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+
+	<link rel="stylesheet" href="css/main.css">
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+	<script type="text/javascript" src="js/index.js"></script>
+	<script type="text/javascript" src="js/skycon.js"></script>
+	<link rel="stylesheet" href="http://fontawesome.io/assets/font-awesome/css/font-awesome.css">
+</head>
+<body>
+	<img src="https://dczii.github.io/images/logo.png" style="height:50px;width:auto;margin-bottom:20px;" />
+	<div class="row">
+		<div class="col-md-12 weatherContainer">
+			<h2>Weather App</h2>
+			<canvas id="icon1" width="128" height="128"></canvas>
+			<p id="weather_temp"></p>
+			<p id="weather_city"></p>
+			<i id="icon2" class="fa fa-spinner fa-pulse fa-3x fa-fw"></i>
+			<p id="weather"> </p>
+			<button class="btn btn-success" onClick="getLocation()">Get Location</button>
+
+			<div class="temp_icons">
+				<span id="tempC" onClick="changeTemp(this)">C</span>
+				<span id="tempF" onClick="changeTemp(this)">F</span>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
