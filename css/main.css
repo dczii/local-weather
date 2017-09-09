@@ -44,3 +44,10 @@ body {
 #tempF {
 	font-size: 1em;
 }
+
+.footer {
+	color: #FAFAFA;
+	max-width: 500px;
+	margin: 0 auto;
+	margin-top: 20px;
+}
